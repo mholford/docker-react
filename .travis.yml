@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t jesfacio/docker-react -f Dockerfile.dev .
+  - docker build -t dockerisgarbage -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true jesfacio/docker-react npm run test
+  - docker run -e CI=true dockerisgarbage npm run test
